@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontend
+          # Updated with your specific Frontend ECR URI
+          image: 497971030638.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 80
+          imagePullPolicy: Always
